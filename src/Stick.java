@@ -11,20 +11,21 @@ public class Stick extends MovingObject{
         super(point, speed, angle, width, length);
     }
 
-    public void setLocation(Player p){
-        this.point = p.getPoint();
-    }
+
 
     public void setSize(int width, int length ) {
-        super.setWidth(70);
-        super.setLength(15);
+        super.setWidth(20);
+        super.setLength(70);
     }
 
     public void drawStick(Graphics g, Player p){
         // draw Line2D.Double
         //g2.draw(new Line2D.Double(x1, y1, x2, y2));
-        Point stickGrip = p.getPoint();
 
-        g.drawLine(new Line2D());
+        int a = getLocation().x;
+        int b =  getLocation().y;
+        int x = (int)( a + getLength() * Math.cos(getAngle()));
+        int y = (int) ( b + getLength() * Math.sin(getAngle()));
+        g.drawLine(a, b, x, y);
     }
 }

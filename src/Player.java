@@ -22,21 +22,18 @@ public class Player extends MovingObject {
     }
 
 
-    public void playerLocation(Player p){
-        p.setLocation();
-    }
 
-    public void pass(Puck puck, Player p){
-        puck.setAngle(p.getAngle());
+    public void pass(Puck puck){
+        puck.setAngle(getAngle());
         puck.setSpeed(3);
     }
 
-    public void wristShot(Puck puck, Player p){
-        puck.setAngle(p.getAngle());
+    public void wristShot(Puck puck){
+        puck.setAngle(getAngle());
         puck.setSpeed(2);
     }
-    public void slapShot(Puck puck, Player p){
-        puck.setAngle(p.getAngle());
+    public void slapShot(Puck puck){
+        puck.setAngle(getAngle());
         puck.setSpeed(6);
     }
 

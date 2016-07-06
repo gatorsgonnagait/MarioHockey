@@ -5,11 +5,11 @@
 import java.awt.*;
 public class MovingObject {
 
-    Point point;
-    int speed;
-    double angle;
-    int width;
-    int length;
+    private Point point;
+    private int speed;
+    private double angle;
+    private int width;
+    private int length;
 //4
 
     public MovingObject(Point point, int speed, double angle, int width, int length) {
@@ -20,7 +20,7 @@ public class MovingObject {
         this.length = length;
     }
 
-    public Point getPoint() {
+    public Point getLocation() {
         return point;
     }
 
