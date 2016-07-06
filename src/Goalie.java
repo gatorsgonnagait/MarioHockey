@@ -3,6 +3,7 @@ import java.awt.*;
 /**
  * Created by Mesa on 7/1/2016.
  */
+//test
 public class Goalie extends Player {
 
     public Goalie(Point point, int speed, double angle, int radius) {

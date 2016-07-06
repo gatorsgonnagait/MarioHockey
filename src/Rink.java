@@ -6,6 +6,7 @@ import java.awt.geom.RoundRectangle2D;
 /**
  * Created by Mesa on 7/1/2016.
  */
+//test
 public class Rink extends JPanel{
 
     public void paintComponent(Graphics g){

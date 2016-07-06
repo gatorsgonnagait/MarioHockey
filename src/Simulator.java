@@ -7,7 +7,7 @@ public class Simulator {
 
     //object movement
 
-    //object speed
+    //object speed 12
     // puck angle
     static Puck puckobj ;
 
