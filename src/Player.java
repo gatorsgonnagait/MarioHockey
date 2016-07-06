@@ -10,7 +10,7 @@ import java.awt.*;
 public class Player extends MovingObject {
 
 
-    //Graphics2D stick = (Graphics2D) g;
+
 
     public Player(Point point, int speed, double angle, int radius) {
         super(point, speed, angle, radius);
@@ -21,6 +21,10 @@ public class Player extends MovingObject {
         super.setRadius(45);
     }
 
+
+    public void playerLocation(Player p){
+        p.g
+    }
 
     public void pass(Puck puck, Player p){
         puck.setAngle(p.getAngle());

@@ -8,14 +8,16 @@ public class MovingObject {
     Point point;
     int speed;
     double angle;
-    int radius;
+    int width;
+    int height;
 
 
-    public MovingObject(Point point, int speed, double angle, int radius) {
+    public MovingObject(Point point, int speed, double angle, int width, int height) {
         this.point = point;
         this.speed = speed;
         this.angle = angle;
-        this.radius = radius;
+        this.width = width;
+        this.height = height;
     }
 
     public Point getPoint() {
@@ -25,6 +27,7 @@ public class MovingObject {
     public void setLocation(Point point) {
         this.point = point;
     }
+
 
     public int getSpeed() {
         return speed;

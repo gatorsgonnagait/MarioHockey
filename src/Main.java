@@ -6,6 +6,8 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        Rink.drawRink(Graphics g);
+
+        UI rink = new UI();
+        rink.createFrame();
     }
 }

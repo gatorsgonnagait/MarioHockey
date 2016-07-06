@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Line2D;
 import java.awt.geom.RoundRectangle2D;
@@ -5,13 +6,13 @@ import java.awt.geom.RoundRectangle2D;
 /**
  * Created by Mesa on 7/1/2016.
  */
-public class Rink {
+public class Rink extends JPanel{
 
-    public static void drawRink(Graphics g){
+    public void paintComponent(Graphics g){
+
         Graphics2D rink = (Graphics2D) g;
 
-        r
-        rink.draw(new RoundRectangle2D.Double(0, 0, 200, 85, 15, 15));
+        rink.draw(new RoundRectangle2D.Double(100, 100, 800, 360, 170, 170));
 
         rink.draw(new Line2D.Double(0, 0, 100, -100));// 5 vertical lines on rink
         rink.draw(new Line2D.Double(0, 0, 100, -100));
