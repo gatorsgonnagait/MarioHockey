@@ -9,15 +9,15 @@ public class MovingObject {
     int speed;
     double angle;
     int width;
-    int height;
+    int length;
+//4
 
-
-    public MovingObject(Point point, int speed, double angle, int width, int height) {
+    public MovingObject(Point point, int speed, double angle, int width, int length) {
         this.point = point;
         this.speed = speed;
         this.angle = angle;
         this.width = width;
-        this.height = height;
+        this.length = length;
     }
 
     public Point getPoint() {
@@ -45,12 +45,19 @@ public class MovingObject {
         this.angle = angle;
     }
 
-    public void setRadius(int radius){
-        this.radius = radius;
+    public int getWidth() {
+        return width;
     }
 
+    public void setWidth(int width) {
+        this.width = width;
+    }
 
+    public int getLength() {
+        return length;
+    }
 
-
-
+    public void setLength(int length) {
+        this.length = length;
+    }
 }

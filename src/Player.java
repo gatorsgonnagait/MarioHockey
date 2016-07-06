@@ -3,7 +3,7 @@ import java.awt.*;
 /**
  * Created by Mesa on 7/1/2016.
  */
-//test
+//test4
 
 
 
@@ -12,18 +12,18 @@ public class Player extends MovingObject {
 
 
 
-    public Player(Point point, int speed, double angle, int radius) {
-        super(point, speed, angle, radius);
+    public Player(Point point, int speed, double angle, int width, int length) {
+        super(point, speed, angle, width, length);
     }
 
     @Override
-    public void setRadius(int radius) {
-        super.setRadius(45);
+    public void setWidth(int width) {
+        super.setWidth(52);
     }
 
 
     public void playerLocation(Player p){
-        p.g
+        p.setLocation();
     }
 
     public void pass(Puck puck, Player p){
